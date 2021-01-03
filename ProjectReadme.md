@@ -13,11 +13,15 @@ Pressing ctrl and enter will run the code cells .
 Running the note requires a little knowledge of working with jupiter but in the code cell pressing ctrl and enter will run each cell.
 
 ## Code analysis 
+****
 Section 2 is the only code cells that need to be run to combine the dataset. Section 1 contains shows the finding of how the distrubtions where found and how the Section 2 code cells were created. 
-code 
-#### function to create new cases random variables that are sorted. 
+code. There are 4 variable generated with the np.random. but variable are generated with calcution based on those variables.
+#### function to create new cases random variables that are sorted.
+****
 ##### The first function below is a uses the numpy random gamma distruibtion.
-![](https://media.geeksforgeeks.org/wp-content/uploads/20200711163155/Screenshot20200711162300.png)
+****
+![](https://media.geeksforgeeks.org/wp-content/uploads/20200711163155/Screenshot20200711162300.png)<br>
+****
 The gamma distrubtion takes three paramenters.
 then sort the resulting ndarry. 
 The round to two decimal places
@@ -28,9 +32,13 @@ def new_cases():
     for i in range(len(arrr)):
         arrr[i] = round(arrr[i], 2)
     return arrr
+****
 ##### The second function.
+****
 #### function to create new deaths, and new_patients random variables that are sorted. 
-![](https://media.geeksforgeeks.org/wp-content/uploads/20200805150533/Screenshot20200805145651.png)
+****
+![](https://media.geeksforgeeks.org/wp-content/uploads/20200805150533/Screenshot20200805145651.png)<br>
+****
 The random samples from Wald or Inverse Gaussian distribution and return the random samples as numpy array.
 The wald function takes three (mean, scale, size=None)
 def new_deaths()
@@ -39,6 +47,8 @@ def new_deaths()
     for i in range(len(arrr)):
         arrr[i] = round(arrr[i], 0)
     return arrr
+**** 
 ## Analysis. 
+****
 Section 3 contains analysis of the who covid 19 dataset. This good practice in analysis of datsets and help find the relationship of the variable in this dataset. 
-
+****
